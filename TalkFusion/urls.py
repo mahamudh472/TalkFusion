@@ -16,9 +16,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
+from allauth.socialaccount.models import SocialApp, SocialAccount, SocialToken
+from django.contrib.auth.decorators import login_required
+from allauth.socialaccount.providers.facebook.views import oauth2_login
+
+def dashboard_home(request):
+    return JsonResponse({"message": "Welcome to the Dashboard"})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('dashboard/', dashboard_home, name='dashboard_home'),
     path('api/', include('main.urls')),
     path('accounts/', include('allauth.urls')),
+    path(
+        'connect/facebook/',
+        login_required(oauth2_login),
+        name='facebook_connect'
+    ),
 ]

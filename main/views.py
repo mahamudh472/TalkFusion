@@ -1,4 +1,6 @@
+import token
 from django.shortcuts import render
+from django.http import JsonResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.conf import settings
@@ -6,6 +8,7 @@ import requests
 import logging
 from rest_framework import status
 import json
+from allauth.socialaccount.models import SocialToken
 
 logger = logging.getLogger(__name__)
 
@@ -48,55 +51,58 @@ class SendWhatsappMessageView(APIView):
             return Response({"status": "Failed to send message", "error": response.text}, status=500)
 
 
-class WhatsAppWebhookView(APIView):
-    def get(self, request):
-        """
-        Handle webhook verification (GET request from Meta).
-        """
-        mode = request.query_params.get('hub.mode')
-        token = request.query_params.get('hub.verify_token')
-        challenge = request.query_params.get('hub.challenge')
+def custom_view(request):
+    user_token_obj = SocialToken.objects.filter(
+        account__user=request.user,
+        account__provider='facebook'
+    ).first()
 
-        if mode == 'subscribe' and token == settings.WHATSAPP_WEBHOOK_VERIFY_TOKEN:
-            logger.info('Webhook verification successful')
-            return Response(challenge, content_type='text/plain')
-        else:
-            logger.warning(f'Webhook verification failed: mode={mode}, token={token}')
-            return Response({'error': 'Invalid verification token'}, status=status.HTTP_403_FORBIDDEN)
+    if not user_token_obj:
+        return JsonResponse({"error": "User has no linked Facebook account"}, status=400)
 
-    def post(self, request):
-        """
-        Handle incoming webhook events (POST request from Meta).
-        """
-        try:
-            payload = request.data
-            logger.info(f'Received webhook payload: {json.dumps(payload, indent=2)}')
+    user_token = user_token_obj.token
 
-            if payload.get('object') == 'whatsapp_business_account':
-                for entry in payload.get('entry', []):
-                    for change in entry.get('changes', []):
-                        if change.get('field') == 'messages':
-                            value = change['value']
-                            messages = value.get('messages', [])
-                            statuses = value.get('statuses', [])
+    # Get pages managed by user
+    res = requests.get(
+        "https://graph.facebook.com/v19.0/me/accounts",
+        params={"access_token": user_token}
+    )
+    pages = res.json()
+    if not pages.get("data"):
+        return JsonResponse({"error": "No pages found"}, status=400)
 
-                            # Handle incoming messages
-                            for message in messages:
-                                sender = message.get('from')
-                                message_type = message.get('type')
-                                message_content = message.get(message_type, {}).get('body', 'Non-text message')
-                                logger.info(f'Incoming message from {sender}: {message_content}')
-                                # Add logic: e.g., save to DB, trigger reply via API
+    page = pages["data"][0]
+    page_id = page["id"]
+    page_access_token = page["access_token"]  # <-- THIS IS IMPORTANT
 
-                            # Handle message status updates (e.g., sent, delivered, read)
-                            for status_update in statuses:
-                                message_id = status_update.get('id')
-                                status_type = status_update.get('status')
-                                recipient = status_update.get('recipient_id')
-                                logger.info(f'Message {message_id} to {recipient} status: {status_type}')
-                                # Add logic: e.g., update message status in DB
+    # Subscribe page to webhook
+    # url = f"https://graph.facebook.com/v19.0/{page_id}/subscribed_apps"
+    # params = {
+    #     "subscribed_fields": "messages,messaging_postbacks",
+    #     "access_token": page_access_token  # <-- use page token
+    # }
+    # response = requests.post(url, params=params)
 
-            return Response({'status': 'Event received'}, status=status.HTTP_200_OK)
-        except Exception as e:
-            logger.error(f'Error processing webhook: {str(e)}')
-            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    # confirm_response = requests.get(
+    #     f"https://graph.facebook.com/v19.0/{page_id}/subscribed_apps",
+    #     params={"access_token": page_access_token}
+    # )
+
+    PSID = "24939509165711051"
+    url = f"https://graph.facebook.com/v19.0/me/messages?access_token={page_access_token}"
+
+    payload = {
+        "recipient": {"id": PSID},
+        "message": {"text": "Hello from TalkFusion!"}
+    }
+
+    response = requests.post(url, json=payload)
+
+    return JsonResponse({
+        "user_token": user_token,
+        "pages": pages,
+        "page_id": page_id,
+        "page_access_token": page_access_token,
+        # "subscribe_response": response.json(),
+        "message_response": response.json(),
+    })

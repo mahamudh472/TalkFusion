@@ -1,6 +1,10 @@
 import json
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 VERIFY_TOKEN = "my_whatsapp_webhook_token_123"  # Change this!
 
@@ -52,7 +56,7 @@ def fb_webhook(request):
     elif request.method == 'POST':
         data = json.loads(request.body.decode("utf-8"))
         # Process messages here
-        print(data)
+        logger.info("Received data: %s", json.dumps(data, indent=2))
         return HttpResponse("EVENT_RECEIVED")
     else:
         return HttpResponse(status=405)

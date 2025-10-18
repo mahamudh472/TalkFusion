@@ -170,6 +170,9 @@ AUTHENTICATION_BACKENDS = [
 # Optional: redirect after login
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = "https"
+
+SITE_ID = 2
 
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
@@ -178,7 +181,17 @@ SOCIALACCOUNT_PROVIDERS = {
         'SCOPE': ['email', 'pages_show_list', 'pages_messaging', 'pages_read_engagement', 'pages_manage_metadata'],
         'AUTH_PARAMS': {'auth_type': 'rerequest'},
         'FIELDS': ['id', 'name', 'email'],
+        'EXCHANGE_TOKEN': True,
+        'LOCALE_FUNC': lambda request: 'en_US',
         'VERIFIED_EMAIL': False,
         'VERSION': 'v19.0',  # latest Graph API version
     }
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8000",
+    "https://notifiable-jeni-unpalpablely.ngrok-free.dev",
+]
+
+# settings.py
+SOCIALACCOUNT_ADAPTER = "main.adapters.LinkSocialAccountAdapter"
