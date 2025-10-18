@@ -1,0 +1,28 @@
+{% load socialaccount %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!-- Social login buttons -->
+    <p>Login with:</p>
+    {% providers_media_js %}
+    <ul>
+        {% for provider in socialaccount_providers %}
+        <li>
+            <a href="{% provider_login_url provider.id %}">{{ provider.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Default login form (optional) -->
+    <form method="post" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,435 @@
+Webhook verification successful
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Webhook verification successful
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Webhook verification successful
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/send_whatsapp_message/
+Internal Server Error: /api/send_whatsapp_message/
+Internal Server Error: /api/send_whatsapp_message/
+Watching for file changes with StatReloader
+Internal Server Error: /api/send_whatsapp_message/
+/home/mahmud/Projects/TalkFusion/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /webhook/facebook/
+/home/mahmud/Projects/TalkFusion/main/webhook.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/mahmud/Projects/TalkFusion/TalkFusion/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /accounts
+Not Found: /favicon.ico
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/decorators.py", line 12, in wrap
+    resp = function(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 95, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 53, in dispatch
+    response = super().dispatch(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 72, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 122, in get_context_data
+    site = get_current_site(self.request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Not Found: /accounts/register
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/decorators.py", line 12, in wrap
+    resp = function(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 160, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 53, in dispatch
+    response = super().dispatch(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 118, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 72, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 202, in get_context_data
+    site = get_current_site(self.request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/decorators.py", line 12, in wrap
+    resp = function(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 95, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 53, in dispatch
+    response = super().dispatch(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 72, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 122, in get_context_data
+    site = get_current_site(self.request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/decorators.py", line 12, in wrap
+    resp = function(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 95, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 53, in dispatch
+    response = super().dispatch(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/mixins.py", line 72, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/allauth/account/views.py", line 122, in get_context_data
+    site = get_current_site(self.request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahmud/Projects/TalkFusion/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /dashboard/
+Not Found: /dashboard/
+Not Found: /
