@@ -27,6 +27,7 @@ def dashboard_home(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', dashboard_home, name='dashboard_home'),
+    path('users/', include('users.urls')),
     path('api/', include('main.urls')),
     path('accounts/', include('allauth.urls')),
     path(
